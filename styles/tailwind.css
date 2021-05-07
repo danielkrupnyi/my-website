@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Poppins-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/Poppins-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Titillium Web";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/TitilliumWeb-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Titillium Web";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/TitilliumWeb-Italic.ttf");
+  }
+  @font-face {
+    font-family: "Titillium Web";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/TitilliumWeb-Bold.ttf");
+  }
+}
+
+@layer components {
+  .span {
+    @apply bg-brand text-text italic;
+  }
+  .section {
+    @apply min-h-adjustable-min sm:min-h-adjustable;
+  }
+  .home-section {
+    @apply h-adjustable-min sm:h-adjustable;
+  }
+  .article {
+    @apply min-h-adjustable-min sm:min-h-adjustable mb-10 text-center;
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    .masonry-3-col {
+      column-count: 3;
+      column-gap: 1.5rem;
+    }
+    .masonry-2-col {
+      column-count: 2;
+      column-gap: 1.5rem;
+    }
+    .masonry-1-col {
+      column-count: 1;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
