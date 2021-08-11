@@ -1,5 +1,7 @@
 # my-website
 
+![thumbnail](https://media.graphcms.com/output=format:jpg/iL5kTqkLTpqiPTKELYUG?_ga=2.267873228.338884877.1628596553-34374319.1628596553)
+
 I created my portfolio to store my projects and and publish my articles.
 I wanted my portfolio to be simple, clean, and easy to navigate on both mobile and desktop devices.
 
